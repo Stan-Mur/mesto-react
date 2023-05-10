@@ -14,4 +14,3 @@
 **Технологии** 
 Применялось при вёрстке: методология БЭМ, файловая структура БЭМ nested, Flex, Grid, JavaScript, React.
 
-* [Ссылка проекта на хостинге GitHub Pages](https://stan-mur.github.io/mesto/)
