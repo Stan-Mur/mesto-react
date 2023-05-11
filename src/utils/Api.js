@@ -104,7 +104,7 @@ class Api {
 }
 
 export const api = new Api({
-    baseUrl: 'https://nomoreparties.co/v1/cohort-25',
+    baseUrl: 'https://nomoreparties.co/v1/cohort-64',
     headers: {
         authorization: '3f7400de-4faa-456b-995e-bfe48f676c49',
         'Content-Type': 'application/json'
