@@ -1,5 +1,6 @@
 {
   "name": "mesto-react",
+  "homepage": "https://stan-mur.github.io/mesto-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
