@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4327937f.css",
+    "main.js": "/static/js/main.61db096b.js",
+    "static/js/787.5530211c.chunk.js": "/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-Medium.otf": "/static/media/Inter-Medium.d4f3abb83549190e93de.otf",
+    "static/media/Inter-Black.otf": "/static/media/Inter-Black.c568a4b98803458feb7f.otf",
+    "static/media/Inter-Regular.otf": "/static/media/Inter-Regular.78b51f2147202615aa77.otf",
+    "static/media/logo.svg": "/static/media/logo.03b78ada3425e9132ff3db7ea8f4a6f6.svg",
+    "static/media/like.svg": "/static/media/like.87ed371465c7a6a1cd01.svg",
+    "index.html": "/index.html",
+    "static/media/trash.svg": "/static/media/trash.a274c87c0f6b553b47ad.svg",
+    "static/media/likeActive.svg": "/static/media/likeActive.fe17a515669479b1e649.svg",
+    "static/media/Close.svg": "/static/media/Close.118074baed770c43e4bc.svg",
+    "static/media/Vector.svg": "/static/media/Vector.8667ac4a523e8fc42e59.svg",
+    "static/media/Vector2.svg": "/static/media/Vector2.d86bb2edc2f6eadb96b7.svg",
+    "main.4327937f.css.map": "/static/css/main.4327937f.css.map",
+    "main.61db096b.js.map": "/static/js/main.61db096b.js.map",
+    "787.5530211c.chunk.js.map": "/static/js/787.5530211c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4327937f.css",
+    "static/js/main.61db096b.js"
+  ]
+}
