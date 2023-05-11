@@ -29,7 +29,7 @@ function Main(props) {
       api
         .initCardsFromServer()
         .then((result) => {
-          setCards([...result.reverse()]);
+          setCards([...result()]);
         })
         .catch((err) => {
           console.log(err);
