@@ -106,7 +106,7 @@ class Api {
 export const api = new Api({
     baseUrl: 'https://nomoreparties.co/v1/cohort-64',
     headers: {
-        authorization: '3f7400de-4faa-456b-995e-bfe48f676c49',
+        authorization: '9739a35e-2b3d-46e8-aa26-f34f71d5093f',
         'Content-Type': 'application/json'
     }
 });
