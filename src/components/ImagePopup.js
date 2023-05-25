@@ -3,7 +3,9 @@ import React from "react";
 function ImagePopup(props) {
   return (
     <div
-      className={`popup popup_type_image ${ props.card.bool ? "popup_opened" : "" }`}
+      className={`popup popup_type_image ${
+        props.card.bool ? "popup_opened" : ""
+      }`}
     >
       <div className="popup__container">
         <button
