@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
@@ -9,17 +8,18 @@ import AddPlacePopup from './AddPlacePopup.js';
 import EditAvatarPopup from './EditAvatarPopup.js';
 import EditProfilePopup from './EditProfilePopup.js';
 import { CurrentUserContext } from '../contexts/CurrentUserContext.js';
+import { useEffect, useState } from 'react';
 
 function App() {
-    const [cards, setCards] = React.useState([]);
-    const [currentUser, setCurrentUser] = React.useState({});
-    const [isEditProfilePopupOpen, setEditProfilePopupOpen] = React.useState(false);
-    const [isAddPlacePopupOpen, setAddPlacePopupOpen] = React.useState(false);
-    const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = React.useState(false);
-    const [isEditAgreePopupOpen, setEditAgreePopupOpen] = React.useState(false);
-    const [selectedCard, setSelectedCard] = React.useState({ bool: false, link: '' });
+    const [cards, setCards] = useState([]);
+    const [currentUser, setCurrentUser] = useState({});
+    const [isEditProfilePopupOpen, setEditProfilePopupOpen] = useState(false);
+    const [isAddPlacePopupOpen, setAddPlacePopupOpen] = useState(false);
+    const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = useState(false);
+    const [isEditAgreePopupOpen, setEditAgreePopupOpen] = useState(false);
+    const [selectedCard, setSelectedCard] = useState(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         function initialCards() {
             api.initCardsFromServer()
                 .then((result) => {
@@ -32,7 +32,7 @@ function App() {
         initialCards();
     }, []);
 
-    React.useEffect(() => {
+    useEffect(() => {
         function getUserInfo() {
             api.initialUsers()
                 .then((result) => {
@@ -47,11 +47,8 @@ function App() {
         getUserInfo();
     }, []);
 
-    function handleCardClick(props) {
-        setSelectedCard({
-            bool: true,
-            link: props
-        });
+    function handleCardClick(card) {
+        setSelectedCard(card);
     }
     function handleEditAvatarClick() {
         setEditAvatarPopupOpen(true);
@@ -70,10 +67,7 @@ function App() {
         setAddPlacePopupOpen(false);
         setEditAvatarPopupOpen(false);
         setEditAgreePopupOpen(false);
-        setSelectedCard({
-            bool: false,
-            link: '',
-        });
+        setSelectedCard(null);
     }
 
     function handleUpdateUser(data) {
